@@ -1,10 +1,13 @@
-
+body{
+    background-color: #222;
+}
 .form{
     display: flex;
     position: relative;
     align-items: center;
     margin: 50px 50px;
     background: #444;
+    border-radius: 30px;
 }
 .img-form{
     display: flex;
@@ -68,13 +71,17 @@
     padding: 12px;
 }
 @media screen and (max-width:400px){
-    
+   
     .form{
         flex-direction: column;
-        margin-top: 100px;
+        margin: 50px 5px;
+        height: calc(92vh - 90px);
+        
     }
-    .form-container{
-        min-width: 280px;
+    
+    .form-input{
+        font-size: 20px;
+        color: #fff;
     }
     .img-form{
         min-width: 200px;
